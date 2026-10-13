@@ -1,3 +1,6 @@
+// -- Production API base (patched for deployment) --
+const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? '' : 'https://ghost-drop-backend.onrender.com';
+
 const $ = (id) => document.getElementById(id);
 
 const state = {
